@@ -15,7 +15,10 @@
         </span>
       </CustomButton>
     </div>
-    <div class="flex-1 flex flex-wrap justify-content-between align-center">
+    <div
+      class="flex-1 flex flex-wrap justify-content-between align-center"
+      style="overflow-y:  scroll;"
+    >
       <CustomButton
         v-for="(m, index) in months"
         :key="index"
@@ -97,7 +100,7 @@
       },
       getYears () {
         this.months = null
-        this.years = ArrayRange(this.month.year - 7, this.month.year + 7)
+        this.years = ArrayRange(this.month.year - 80, this.month.year + 7)
       },
       selectMonth (monthNumber) {
         this.$emit('input', { month: monthNumber, year: this.currentYear })

@@ -262,7 +262,7 @@
             options: {
               format: 'YYYY-MM-DD HH:mm',
               id: 'DateTimePicker',
-              minDate: '2018-04-05',
+              minDate: '1930-04-05',
               maxDate: '2018-04-24'
             }
           },
